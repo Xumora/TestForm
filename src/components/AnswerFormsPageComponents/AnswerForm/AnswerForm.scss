@@ -1,0 +1,11 @@
+@import "../../../assets/configStyle.scss";
+.answer-form {
+    textarea,
+    input {
+        width: 100%;
+        padding: 12px 24px;
+        border-radius: 4px;
+        border: 1px solid silver;
+        @include font(500, 14px, 18px, black);
+    }
+}

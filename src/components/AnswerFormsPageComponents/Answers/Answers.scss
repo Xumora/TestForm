@@ -1,0 +1,63 @@
+@import "../../../assets/configStyle.scss";
+.answers {
+    &-radio {
+        input {
+            display: none;
+            &:checked + label::before {
+                background-color: #090761;
+                border-color: #090761;
+                box-shadow: inset 0 0 0 2px white;
+                transition: all ease 0.5s;
+            }
+        }
+        label {
+            @include font(500, 16px, 20px, black);
+            @include start;
+            margin: 0 12px 12px 0;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border: 1px solid silver;
+                margin-right: 12px;
+                transition: all ease 0.5s;
+            }
+        }
+    }
+    &-checkbox {
+        input {
+            display: none;
+            &:checked + label span {
+                color: #000;
+                border-color: #090761;
+                svg {
+                    opacity: 1;
+                    transition: all ease 0.5s;
+                }
+            }
+        }
+        label {
+            @include font(500, 16px, 20px, black);
+            @include start;
+            margin: 0 12px 12px 0;
+            span {
+                display: inline-block;
+                border: 2px solid #ccc;
+                height: 15px;
+                width: 15px;
+                margin-right: 12px;
+                transition: color ease 0.5s;
+                border-radius: 3px;
+                svg {
+                    position: relative;
+                    left: 2px;
+                    bottom: 5px;
+                    opacity: 0;
+                    transition: all ease 0.5s;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import "../../../../assets/configStyle.scss";
+.seeAnswersPage-sectionOne {
+    &-inner {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &-title {
+            @include font(600, 30px, 43px, #2f2d51);
+            margin-bottom: 30px;
+        }
+    }
+}

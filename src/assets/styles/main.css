@@ -1,0 +1,89 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+.container {
+  max-width: 100% !important;
+  padding: 0 100px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.mainBtn {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: black;
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #090761;
+  border: 1px solid #090761;
+  padding: 10px 24px;
+  border-radius: 25px;
+}
+
+.mainBtnTwo {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: black;
+  display: block;
+  margin: 20px auto;
+  padding: 12px 26px;
+  background-color: #090761;
+  border-radius: 22px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,39 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin start {
+    display: flex;
+    align-items: center;
+}
+
+@mixin spaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin column($value) {
+    display: flex;
+    align-items: $value;
+    flex-direction: column;
+}
+
+@mixin font($weight, $size, $height, $color) {
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin btn {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: black;
+    display: block;
+}

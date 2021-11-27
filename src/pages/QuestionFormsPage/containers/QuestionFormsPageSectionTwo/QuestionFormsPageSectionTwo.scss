@@ -1,0 +1,23 @@
+@import "../../../../assets/configStyle.scss";
+.questionFormsPage-sectionTwo {
+    padding-bottom: 100px;
+    &-inner {
+        &-title {
+            border-top: 2px solid silver;
+            h1 {
+                @include font(600, 30px, 43px, #2f2d51);
+                margin: 40px 0;
+            }
+        }
+        &-bottom {
+            button {
+                @include btn;
+                margin: 20px auto;
+                padding: 12px 26px;
+                background-color: #090761;
+                border-radius: 22px;
+                @include font(400, 14px, 20px, white);
+            }
+        }
+    }
+}

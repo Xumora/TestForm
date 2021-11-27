@@ -1,0 +1,38 @@
+@import "../../../assets/configStyle.scss";
+
+.seeAnswer-block {
+    margin-bottom: 24px;
+    background-color: white;
+    padding: 24px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+    display: flex;
+    &-number {
+        width: 5%;
+        text-align: center;
+        p {
+            @include font(500, 16px, 24px, #222222);
+        }
+    }
+    &-main {
+        width: 95%;
+        .question {
+            @include font(600, 18px, 24px, #222222);
+            margin-bottom: 24px;
+        }
+        .answer {
+            @include font(500, 16px, 24px, #222222);
+            @include start;
+            .svg-box {
+                @include center;
+            }
+            svg {
+                width: 20px;
+                margin: 0 6px;
+                path {
+                    stroke: #090761;
+                }
+            }
+        }
+    }
+}

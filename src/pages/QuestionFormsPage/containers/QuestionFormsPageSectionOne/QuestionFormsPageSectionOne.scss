@@ -1,0 +1,33 @@
+@import "../../../../assets/configStyle.scss";
+.questionFormsPage-sectionOne {
+    &-inner {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        &-top {
+            @include spaceBetween;
+            .title {
+                @include font(600, 30px, 43px, #2f2d51);
+            }
+        }
+        &-center {
+            input {
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                margin: 30px 0;
+                @include font(700, 18px, 28px, black);
+            }
+        }
+        &-bottom {
+            input {
+                box-shadow: 0px 4px 11px rgba(140, 152, 164, 0.1);
+                background-color: white;
+                border: 1px solid #e7e7ec;
+                width: 100%;
+                padding: 16px 32px;
+                border-radius: 4px;
+                @include font(500, 16px, 20px, #2f2d51);
+            }
+        }
+    }
+}
